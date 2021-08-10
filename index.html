@@ -268,8 +268,12 @@
 
 					ul.appendChild(li);
 				}
+				
+				while (cont.firstChild) {
+				    cont.firstChild.remove()
+				}
 
-				cont.replaceChild(ul);
+				cont.appendChild(ul);
 			}
 		</script>
 	</body>
